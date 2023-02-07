@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>Prüfziffer berechnen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        "use strict";
+
+        function rechne() {
+
+            var vAusgabeHTML;
+            var vErgebnis;
+            var vA = [1,3,1,3,1,3,1,3,1,3,1,3,];
+            var vInput = document.getElementById("idInput").value;
+            var vi = 0
+
+
+             while (vi<12) {
+                 vErgebnis= vA[i] * vInput[i]
+                 vAusgabe= vAusgabe + vErgebnis + "";
+
+
+                 vAusgabeHTML= "Die Prüfsumme ist: " +vPrüfsumme+ " und die Prüfziffer ist: " +vPrüfziffer;
+			
+				document.getElementById("idAusgabeHTML").innerHTML=vAusgabeHTML;
+                    }
+                    
+                </script> 
+        </head>
+
+<body>
+    <h1>Prüfziffer berechnen</h1>
+EAN : <input id="idInput" type="" maxlength="" value="" size="">
+
+    <button onclick="rechne();">Berechne Prüfziffer!</button><br><br>
+    <div id="idAusgabeHTML"></div>
+</body>
+</html>
